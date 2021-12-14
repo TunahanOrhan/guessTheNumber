@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    color: #E0DFD5;
+}
+
+body {
+    background-color: #313638;
+    display: flex;
+    flex-direction: column;
+}
+
+#againBtn {
+    background-color: #E0DFD5;
+    color: #313638;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 100px;
+}
+
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+#randomNumberContainer {
+    background-color: #E0DFD5;
+    color: #313638;
+    padding: 2rem;
+    font-size: 1.4rem;
+    width: 50px;
+    text-align: center;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.infoContainer .guessSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoContainer .guessSection #guessInput {
+    background-color: transparent;
+    border: 4px solid #E0DFD5;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#guessInput:focus {
+    outline: none;
+}
+
+#numberCheckBtn {
+    background-color: #E0DFD5;
+    color: #313638;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 100px;
+}
+
+/* Other explorers */
+#guessInput::-webkit-outer-spin-button,
+#guessInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.guessSection {
+    width: 50%;
+    text-align: center;
+}
+
+.infoSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
