@@ -9,7 +9,7 @@ const highscore = document.querySelector("#highscoreNumber");
 score.innerHTML = 20;
 highscore.innerHTML = 0;
 
-// 
+//
 const getGuessNumber = () => {
   const guessNumber = document.querySelector("#guessInput").value;
   if (!guessNumber) {
@@ -32,6 +32,7 @@ const getGuessNumber = () => {
     correctness.innerHTML = "🎯 Correct!!";
     randomNumberContainer.innerHTML = randomNumber;
     document.querySelector("body").style.backgroundColor = "#5E7A2A";
+    document.querySelector("#numberCheckBtn").disabled = true;
     if (score.innerHTML > highscore.innerHTML) {
       highscore.innerHTML = score.innerHTML;
     }
@@ -41,12 +42,13 @@ const getGuessNumber = () => {
 // Game reset by clicking again button
 const resetGame = () => {
   randomNumber = Math.floor(Math.random() * 20) + 1; // Generate random number between 1-20
-//   console.log(randomNumber);
+  //   console.log(randomNumber);
   randomNumberContainer.innerHTML = "?";
   correctness.innerHTML = "Start Guessing..";
   score.innerHTML = 20;
   document.querySelector("#guessInput").value = "";
   document.querySelector("body").style.backgroundColor = "#313638";
+  document.querySelector("#numberCheckBtn").disabled = false;
 };
 
 // when click the check button calling getGuessNumber function
